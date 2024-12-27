@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/XML/XMLDocument.xml to edit this template
+-->
+
+<hibernate-configuration>
+
+  <session-factory>
+
+    <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+
+    <property name="hibernate.connection.url">jdbc:mysql://sql5.freemysqlhosting.net:3306/sql5702877?serverTimezone=UTC</property>
+
+    <property name="hibernate.connection.username">sql5702877</property>
+
+    <property name="hibernate.connection.password">2dMgf88JKl</property>
+
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+
+    <property name="show_sql">true</property>
+
+    <property name="format_sql">true</property>
+
+    <property name="hbm2ddl.auto">update</property>
+    
+    <mapping class="Persona"/>
+
+  </session-factory>
+
+</hibernate-configuration>
+
+<root>
+    
+</root>
+

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.mycompany</groupId>
+    <artifactId>databases</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>22</maven.compiler.source>
+        <maven.compiler.target>22</maven.compiler.target>
+    </properties>
+    <dependencies>
+
+    <!-- Dependencia de Hibernate -->
+
+    <dependency>
+
+      <groupId>org.hibernate</groupId>
+
+      <artifactId>hibernate-core</artifactId>
+
+      <version>5.4.30.Final</version>
+
+    </dependency>
+
+     
+
+    <!-- Conector JDBC para MySQL -->
+
+    <dependency>
+
+      <groupId>mysql</groupId>
+
+      <artifactId>mysql-connector-java</artifactId>
+
+      <version>8.0.23</version>
+
+    </dependency>
+
+     
+
+    <!-- Dependencia para JPA, que Hibernate implementa -->
+
+    <dependency>
+
+      <groupId>javax.persistence</groupId>
+
+      <artifactId>javax.persistence-api</artifactId>
+
+      <version>2.2</version>
+
+    </dependency>
+
+
+
+    <!-- SLF4J con Log4j2 para el logging de Hibernate -->
+
+    <dependency>
+
+      <groupId>org.slf4j</groupId>
+
+      <artifactId>slf4j-log4j12</artifactId>
+
+      <version>1.7.30</version>
+
+    </dependency>
+
+     
+
+    <!-- Dependencia de C3P0 para manejo de pool de conexiones -->
+
+    <dependency>
+
+      <groupId>com.mchange</groupId>
+
+      <artifactId>c3p0</artifactId>
+
+      <version>0.9.5.5</version>
+
+    </dependency>
+        <dependency>
+            <groupId>com.github.salamansar.envbuild</groupId>
+            <artifactId>environment-builder-hibernate4</artifactId>
+            <version>0.8.1</version>
+            <type>jar</type>
+        </dependency>
+    </dependencies>
+</project>
