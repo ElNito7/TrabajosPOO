@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/XML/XMLDocument.xml to edit this template
+-->
+
+<hibernate-configuration>
+
+  <session-factory>
+
+    <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+
+    <property name="hibernate.connection.url">jdbc:mysql://sql3.freemysqlhosting.net:3306/sql3704534?zeroDateTimeBehavior=CONVERT_TO_NULL</property>
+
+    <property name="hibernate.connection.username">sql3704534</property>
+
+    <property name="hibernate.connection.password">CNzss63hls</property>
+
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+
+    <property name="show_sql">true</property>
+
+    <property name="format_sql">true</property>
+
+    <property name="hbm2ddl.auto">update</property>
+    
+    <mapping class="com.mycompany.basesdedatos.Persona"/>
+
+  </session-factory>
+
+</hibernate-configuration>
+
+<root>
+    
+</root>
+
